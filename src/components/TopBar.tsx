@@ -7,7 +7,7 @@ import {
   Text,
   useDisclosure,
 } from "@chakra-ui/react";
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { SiYoutube } from "react-icons/si";
 import { SlQuestion } from "react-icons/sl";
 import useUmami from "../util/hooks/useUmami";

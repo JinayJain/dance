@@ -3,7 +3,8 @@ const useUmami = () => {
     trackEvent:
       typeof window !== "undefined"
         ? window.umami.trackEvent
-        : (event: string, data: any) => {},
+        : // eslint-disable-next-line @typescript-eslint/no-empty-function
+          (_event: string, _data: any) => {},
   };
 };
 

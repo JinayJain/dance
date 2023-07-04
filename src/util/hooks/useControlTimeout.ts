@@ -47,7 +47,7 @@ const useShowControls = (
   const [mouseMoving, setMouseMoving] = useState(false);
 
   useEffect(() => {
-    let timeout: NodeJS.Timeout;
+    let timeout: number;
 
     const handleMouseMove = () => {
       setMouseMoving(true);
@@ -66,7 +66,7 @@ const useShowControls = (
   const [showControls, setShowControls] = useState(true);
 
   useEffect(() => {
-    let timeout: NodeJS.Timeout;
+    let timeout: number;
 
     if (showControlsExpected) {
       setShowControls(true);

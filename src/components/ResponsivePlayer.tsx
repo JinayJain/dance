@@ -1,5 +1,5 @@
 import { Box, Flex, FlexProps } from "@chakra-ui/react";
-import React, { ForwardedRef, forwardRef } from "react";
+import { ForwardedRef } from "react";
 import ReactPlayer from "react-player";
 import { BaseReactPlayerProps } from "react-player/base";
 

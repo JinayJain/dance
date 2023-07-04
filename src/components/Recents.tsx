@@ -1,12 +1,4 @@
-import {
-  Box,
-  BoxProps,
-  Button,
-  Heading,
-  HStack,
-  Stack,
-  Text,
-} from "@chakra-ui/react";
+import { Box, BoxProps, Heading, HStack, Stack, Text } from "@chakra-ui/react";
 import React, { useRef } from "react";
 import { useAppDispatch } from "../util/redux/hooks";
 import { loaded, SavedPlayerState } from "../util/redux/slice/player";

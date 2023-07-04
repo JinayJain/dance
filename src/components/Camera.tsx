@@ -1,14 +1,6 @@
-import {
-  Box,
-  BoxProps,
-  Button,
-  Center,
-  Spinner,
-  Tooltip,
-} from "@chakra-ui/react";
-import { motion, useDragControls } from "framer-motion";
+import { Box, BoxProps, Spinner } from "@chakra-ui/react";
+import { motion } from "framer-motion";
 import { useState, useRef, useEffect, RefObject } from "react";
-import { FiSquare, FiCircle } from "react-icons/fi";
 
 const Camera = ({
   container,

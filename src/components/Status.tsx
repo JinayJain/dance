@@ -1,4 +1,4 @@
-import { Box, Text } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useAppSelector } from "../util/redux/hooks";
 

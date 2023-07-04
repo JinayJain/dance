@@ -1,30 +1,7 @@
-import {
-  Box,
-  keyframes,
-  chakra,
-  HStack,
-  shouldForwardProp,
-  StackProps,
-  VStack,
-  Text,
-} from "@chakra-ui/react";
-import { AnimatePresence, motion } from "framer-motion";
+import { Box, StackProps, VStack, Text } from "@chakra-ui/react";
+import { motion } from "framer-motion";
 import { SlControlPause, SlControlPlay } from "react-icons/sl";
 import { useAppSelector } from "../util/redux/hooks";
-
-const numbers = Array.from({ length: 5 }, (_, i) => i + 1);
-
-const animation = keyframes`
-  0% {
-    transform: scaleY(1);
-  }
-  50% {
-    transform: scaleY(0.2);
-  }
-  100% {
-    transform: scaleY(1);
-  }
-`;
 
 const AudioIndicator = (props: StackProps) => {
   const playing = useAppSelector((state) => state.player.playing);

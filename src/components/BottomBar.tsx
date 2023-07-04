@@ -15,7 +15,6 @@ import {
   StackProps,
   Text,
   useBreakpointValue,
-  VStack,
   RangeSliderTrack,
   RangeSliderFilledTrack,
   RangeSliderThumb,

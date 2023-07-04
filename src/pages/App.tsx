@@ -1,5 +1,4 @@
 import { Box } from "@chakra-ui/react";
-import dynamic from "next/dynamic";
 import { forwardRef, useEffect, useRef } from "react";
 import type ReactPlayer from "react-player";
 import Bar from "../components/Bar";
