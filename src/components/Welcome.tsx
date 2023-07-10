@@ -10,8 +10,10 @@ import {
   ModalOverlay,
   Heading,
   Kbd,
+  Link,
 } from "@chakra-ui/react";
 import { useEffect } from "react";
+import { FiCoffee } from "react-icons/fi";
 
 const ShortcutHint = ({
   shortcut,
@@ -75,6 +77,16 @@ function Welcome({
         </ModalBody>
 
         <ModalFooter>
+          <Link isExternal href="https://ko-fi.com/jinay">
+            <Button
+              colorScheme="blue"
+              mr={3}
+              variant="outline"
+              leftIcon={<FiCoffee />}
+            >
+              Donate
+            </Button>
+          </Link>
           <Button colorScheme="blue" mr={3} onClick={onCloseAndRemember}>
             Close
           </Button>

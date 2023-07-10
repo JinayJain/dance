@@ -10,7 +10,6 @@ import {
 import { useRef, useState } from "react";
 import { SiYoutube } from "react-icons/si";
 import { SlQuestion } from "react-icons/sl";
-import useUmami from "../util/hooks/useUmami";
 import { useAppDispatch } from "../util/redux/hooks";
 import { loaded, MediaType } from "../util/redux/slice/player";
 import { BarButton, BarIconButton } from "./Bar";
@@ -19,8 +18,6 @@ import Welcome from "./Welcome";
 const TopBar = ({ ...props }: BoxProps) => {
   const dispatch = useAppDispatch();
   const fileRef = useRef<HTMLInputElement>(null);
-
-  const { trackEvent } = useUmami();
 
   const { isOpen, onToggle, onClose, onOpen } = useDisclosure();
 
@@ -32,8 +29,6 @@ const TopBar = ({ ...props }: BoxProps) => {
       const url = URL.createObjectURL(file);
 
       const type = file.type.split("/")[0];
-
-      trackEvent("load", { source: "file", type });
 
       if (type === "audio" || type === "video") {
         dispatch(
@@ -84,8 +79,6 @@ const TopBar = ({ ...props }: BoxProps) => {
                   url,
                 })
               );
-
-              trackEvent("load", { source: "youtube", type: "video" });
             }}
           >
             Play
